@@ -1,0 +1,27 @@
+body {
+    background-color: darkblue;
+}
+
+#c{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+
+#down{
+    font-size: 20px;
+    font-family: Sans-Serif;
+    text-align: ;: center;
+}
+
+#reset{
+    font-size: 20px;
+    font-family: Sans-Serif;
+    text-align: center;
+}
+
+#up{
+    font-size: 20px;
+    font-family: Sans-Serif;
+    text-align: center;
+}
