@@ -33,7 +33,7 @@ body {
     left: 60px;
 }
 
-#name {
+#name{
     font-size: 50px;
     position: relative;
     background-color: #0C0032;
@@ -41,22 +41,9 @@ body {
     border-radius: 10px;
     color: white;
     top: 15px;
-    left: 150px;
-}
- 
-#code {
-    position: absolute;
-    top: 130px;
-    left: 60px;
-    font-size: 30px;
-    text-align: center;
-    display: inline-block;
-    background-color: #008CFF;
-    border-radius: 10px;
-    padding: 5px;
+    left: 200px;
 }
 
- 
 .text{
     height: 700px;
     width: 850px;
@@ -64,10 +51,9 @@ body {
     background-color: #AAF6FF;
     border-radius: 15px;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 60px;
 }
-
 
 #font {
     font-size: 30px;
