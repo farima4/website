@@ -7,7 +7,7 @@ let cb = false;
 let error = false;
 let logic;
 
-document.getElementById('butt').onclick = function() {
+document.getElementById('butt').onclick = function () {
     let m = document.getElementById('math').value;;
 
     for (let i = 0; i < m.length; i += 1) {
@@ -16,28 +16,23 @@ document.getElementById('butt').onclick = function() {
         if (logic) {
             error = true;
             break;
-        } else
-        {
+        } else {
             if (m.charAt(i) == '+' || m.charAt(i) == '-' || m.charAt(i) == '*' || m.charAt(i) == '/') {
                 o = m.charAt(i);
                 c = true;
-            } else
-            {
+            } else {
                 if (c) {
                     if (cb) {
 
                         b = b + m.charAt(i);
-                    } else
-                    {
+                    } else {
                         cb = true;
                         b = m.charAt(i)
                     }
-                } else
-                {
+                } else {
                     if (ca) {
                         a = a + m.charAt(i);
-                    } else
-                    {
+                    } else {
                         ca = true;
                         a = m.charAt(i);
                     }
@@ -49,8 +44,7 @@ document.getElementById('butt').onclick = function() {
     if (error) {
         window.alert("molim vas unesite samo brojeve i operaciju!");
         location.reload();
-    } else
-    {
+    } else {
         a = Number(a);
         b = Number(b);
         if (o == '+') {
@@ -62,12 +56,10 @@ document.getElementById('butt').onclick = function() {
         } else if (o == '/') {
             if (b == 0) {
                 window.alert('ne moguce dijeljenje sa nulom');
-            } else
-            {
+            } else {
                 n = a / b;
             }
-        } else
-        {
+        } else {
             n = 'Greska';
         }
 

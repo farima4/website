@@ -1,6 +1,7 @@
 let goofy = new Audio('Audio/Goofy.m4a');
 let timestop = new Audio('Audio/timestop.m4a');
 let rickroll = new Audio('Audio/rickroll.m4a');
+let espuma = new Audio('Audio/espuma.m4a');
 
 document.getElementById('code').onclick = function() {
 
@@ -34,7 +35,10 @@ document.getElementById('code').onclick = function() {
         case 'zawarudo':
             timestop.play();
             break;
-        
+            
+        case 'coca cola espuma':
+            espuma.play();
+            break;
 
         default:
             window.alert('ovaj kod ne postoji!');
