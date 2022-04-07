@@ -29,6 +29,5 @@ document.getElementById('butt').onclick = function () {
             default:
                 alert('Molim vas unesite validan izraz');   
         }
-
     }
 }
