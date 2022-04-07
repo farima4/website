@@ -1,80 +1,34 @@
-let a;
-let b;
-let o;
-let c = false;
-let ca = false;
-let cb = false;
-let error = false;
-let logic;
-
 document.getElementById('butt').onclick = function () {
-    let m = document.getElementById('math').value;;
+    math = document.getElementById('math').value;
 
-    for (let i = 0; i < m.length; i += 1) {
-        logic = m.charAt(i) != '0' && m.charAt(i) != '1' && m.charAt(i) != '2' && m.charAt(i) != '3' && m.charAt(i) != '4' && m.charAt(i) != '5' && m.charAt(i) != '6' && m.charAt(i) != '7' && m.charAt(i) != '8' && m.charAt(i) != '9' && m.charAt(i) != '+' && m.charAt(i) != '-' && m.charAt(i) != '*' && m.charAt(i) != '/';
+    let n1 = math.slice(0, math.indexOf(' '));
+    let o = math.slice(math.indexOf(' ') + 1, math.lastIndexOf(' '));
+    let n2 = math.slice(math.lastIndexOf(' ') + 1);
 
-        if (logic) {
-            error = true;
-            break;
-        } else {
-            if (m.charAt(i) == '+' || m.charAt(i) == '-' || m.charAt(i) == '*' || m.charAt(i) == '/') {
-                o = m.charAt(i);
-                c = true;
-            } else {
-                if (c) {
-                    if (cb) {
-
-                        b = b + m.charAt(i);
-                    } else {
-                        cb = true;
-                        b = m.charAt(i)
-                    }
-                } else {
-                    if (ca) {
-                        a = a + m.charAt(i);
-                    } else {
-                        ca = true;
-                        a = m.charAt(i);
-                    }
-                }
-            }
-        }
-    }
-
-    if (error) {
-        window.alert("molim vas unesite samo brojeve i operaciju!");
-        location.reload();
+    if (n1 == undefined || n2 == undefined || o == undefined) {
+        alert('Please enter a valid math expression');
     } else {
-        a = Number(a);
-        b = Number(b);
-        if (o == '+') {
-            n = a + b;
-        } else if (o == '-') {
-            n = a - b;
-        } else if (o == '*') {
-            n = a * b;
-        } else if (o == '/') {
-            if (b == 0) {
-                window.alert('ne moguce dijeljenje sa nulom');
-            } else {
-                n = a / b;
-            }
-        } else {
-            n = 'Greska';
+        switch (o) {
+            case '+':
+                document.getElementById('span').innerHTML = Number(n1) + Number(n2);
+                break;
+            case '-':
+                document.getElementById('span').innerHTML = Number(n1) - Number(n2);
+                break;
+            case '*':
+                document.getElementById('span').innerHTML = Number(n1) * Number(n2);
+                break;
+            case '/':
+                
+                if (n2 == 0) {
+                    alert('ne mozes da dejliš s nulom');
+                } else {
+                    document.getElementById('span').innerHTML = Number(n1) / Number(n2);
+                }
+                break;
+            default:
+                alert('Molim vas unesite validan izraz');   
         }
 
-        if (b != 0 && o != '/') {
-
-            document.getElementById('span').innerHTML = n;
-        }
-
-
-        a = String('');
-        b = String('');
-        n = 0;
-        c = false;
-        ca = false;
-        cb = false;
-        error = false;
     }
 }
