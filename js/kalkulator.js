@@ -48,7 +48,7 @@ document.getElementById('butt').onclick = function() {
 
     if (error) {
         window.alert("molim vas unesite samo brojeve i operaciju!");
-        error = false;
+        location.reload();
     } else
     {
         a = Number(a);

@@ -1,0 +1,90 @@
+body {
+	background-color: #0c0032;
+}
+
+.rectangle {
+	height: 100px;
+	background-color: #0062b2;
+	max-width: 1000px;
+	margin: auto;
+	border-radius: 10px;
+}
+
+#home {
+	font-size: 50px;
+	text-align: center;
+	position: relative;
+	background-color: white;
+	padding: 5px;
+	border-radius: 10px;
+	color: black;
+	left: 20px;
+	top: 15px;
+}
+
+#about {
+	font-size: 50px;
+	text-align: center;
+	position: relative;
+	background-color: white;
+	padding: 5px;
+	border-radius: 10px;
+	color: black;
+	top: 15px;
+	left: 60px;
+}
+
+#name {
+	font-size: 50px;
+	position: relative;
+	background-color: #0c0032;
+	padding: 5px;
+	border-radius: 10px;
+	color: white;
+	top: 15px;
+	left: 150px;
+}
+
+.text {
+	height: 700px;
+	padding: 20px;
+	background-color: #aaf6ff;
+	border-radius: 15px;
+	position: relative;
+	top: 50px;
+	max-width: 850px;
+	margin: auto;
+}
+
+#font {
+	font-size: 30px;
+	position: relative;
+	top: -20px;
+}
+
+#math {
+	font-size: 30px;
+	display: inline-block;
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#butt {
+	font-size: 30px;
+	text-align: center;
+	display: inline-block;
+	background-color: #008cff;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#span {
+	font-size: 40px;
+	background-color: white;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 10px;
+	position: relative;
+	top: 5px;
+}
