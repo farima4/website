@@ -1,14 +1,5 @@
-#code {
-	font-size: 30px;
-	text-align: center;
-	display: inline-block;
-	background-color: #008cff;
-	border-radius: 10px;
-	padding: 5px;
-}
-
 .text {
-	height: 700px;
+	height: 730px;
 	padding: 20px;
 	background-color: #aaf6ff;
 	border-radius: 15px;
@@ -18,9 +9,10 @@
 	top: 50px;
 }
 
-#font {
+.font {
 	font-size: 30px;
-	top: -10px;
+    position: relative;
+	top: -50px;
 	max-width: 1000px;
 	margin: auto;
 }

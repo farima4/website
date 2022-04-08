@@ -4,7 +4,7 @@ const engleski = 'Website was made by Marko Kovacevic using html, css and javasc
 let dateeng = 'April 7th 2022';
 let dateserb = 'sedmi april 2022';
 
-document.getElementById('par6').innerHTML = 'websajt azuriran: ' + dateeng;
+document.getElementById('par6').innerHTML = 'websajt azuriran: ' + dateserb;
 let indicator = 'srpski';
 
 document.getElementById('code').onclick = function() {
