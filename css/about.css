@@ -1,5 +1,5 @@
 .text {
-	height: 700px;
+	overflow: overlay;
 	padding: 20px;
 	background-color: #aaf6ff;
 	border-radius: 15px;
