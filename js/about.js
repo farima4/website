@@ -1,5 +1,5 @@
-const srpski = 'Websajt napravio Marko Kovacevic koristeci html, css i javascript. Poenta je bila nauciti kako se prave webstranice. Ovdje se mogu naci neki programi koje sam napravio ili se instalirati igrice koje sam napravio sa python-om.';
-const engleski = 'Website was made by Marko Kovacevic using html, css and javascript. The goal was to learn how to make webpages. Here you can find some programs I made or you can install games I made with python.';
+const srpski = 'Websajt napravio Marko (farima4) koristeci html, css i javascript. Poenta je bila nauciti kako se prave webstranice. Ovdje se mogu naci neki programi koje sam napravio ili se instalirati igrice koje sam napravio sa python-om.';
+const engleski = 'Website was made by Marko (farima4) using html, css and javascript. The goal was to learn how to make webpages. Here you can find some programs I made or you can install games I made with python.';
 
 let dateeng = 'April 10th 2022';
 let dateserb = 'deseti april 2022';
